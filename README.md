@@ -8,6 +8,8 @@
 
 设计阶段，尚无实现代码、可运行宿主或性能验证。本文不承诺现有 TekesUI 已支持 WASM、跨进程 GPU 共享或完整输入桥接。
 
+完整原型为三个 Panel、三个独立模块进程、三个 WASM 同时运行，另有一个 Host 主进程；单列、一个 WASM 的运行仅作为前置技术验证，不代表完整原型验收。
+
 - [框架设计](docs/design/architecture.md)
 - [MIT License](LICENSE)
 
