@@ -1,5 +1,7 @@
 # TekesAppHost
 
+> **2026-10-21 迁移说明**：后续开发改为在 [TekesUI](https://github.com/TekesApps/TekesUI) 仓库内按 crate 分层维护。AppHost、模块运行器与 WASM 消费者夹具共享该 workspace；本仓库保留已审查设计的历史，不作为当前实现的独立发布源。迁移中的本地原型尚未发布为稳定 SDK。
+
 共享原生 App 宿主框架：一套 Host 源码，构建时固定模块组合，产出不同 target apps。
 
 每个窗口采用 `left / middle / right` 三列，每列由 `toolbar + content` 组成。每个 Panel 使用独立模块进程运行预定的 content WASM；content 向 Host 注册本列 toolbar。Host 使用 native TekesUI 的 Panel、toolbar 和 splitter 组件呈现三列布局，合成模块的内容画面，并路由输入、事件与请求。

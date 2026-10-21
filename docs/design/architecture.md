@@ -1,5 +1,7 @@
 # TekesAppHost 框架设计
 
+> 历史设计：2026-10-21 决定改为 TekesUI 同仓分层维护，当前开发文档位于 TekesUI workspace 的 `docs/design/app-host-architecture.md`。本仓库保留迁移前历史；独立仓库定位已由后续决定替代。
+
 日期：2026-10-21
 
 状态：设计基线；尚无实现。接口名称为职责示意，未冻结 API、WIT 或 IPC 格式。
